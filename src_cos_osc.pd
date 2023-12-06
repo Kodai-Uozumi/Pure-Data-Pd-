@@ -1,0 +1,26 @@
+#N canvas 626 121 776 600 12;
+#X floatatom 33 192 5 0 0 0 - - -;
+#X obj 103 224 *~;
+#X obj 103 318 dac~;
+#X floatatom 203 181 5 0 0 0 - - -;
+#X obj 65 28 vsl 15 128 110 880 0 0 empty empty empty 0 -9 0 10 -4160
+-1 -1 10900 1;
+#X obj 197 25 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -258113
+-1 -1 4200 1;
+#X obj 276 162 metro 1000;
+#X obj 270 221 tabwrite~ \$0-scope;
+#X obj 268 270 table \$0-scope 441;
+#X obj 280 126 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 102 271 hip~ 5;
+#X obj 102 167 osc~ 440;
+#X connect 1 0 7 0;
+#X connect 1 0 10 0;
+#X connect 4 0 0 0;
+#X connect 4 0 11 0;
+#X connect 5 0 1 1;
+#X connect 5 0 3 0;
+#X connect 6 0 7 0;
+#X connect 9 0 6 0;
+#X connect 10 0 2 0;
+#X connect 11 0 1 0;
